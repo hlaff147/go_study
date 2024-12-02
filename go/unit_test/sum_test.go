@@ -22,6 +22,12 @@ func TestSum(t *testing.T) {
 	if result != expected {
 		t.Errorf("Resultado incorreto: esperado %d, obtido %d", expected, result)
 	}
+
+	result = Sum(-1, 1)
+	expected = -1
+	if result != expected {
+		t.Errorf("Resultado incorreto: esperado %d, obtido %d", expected, result)
+	}
 }
 
 func Sum(a, b int) int {
